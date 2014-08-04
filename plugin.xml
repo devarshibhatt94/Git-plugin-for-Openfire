@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<class>plugin.GitInPlugin</class>
+	<name>Git</name>
+	<description>Incorporate Git service in Openfire</description>
+	<author>Devarshi,Shubham</author>
+	<version>1.1.0</version>
+	<minServerVersion>3.9.0</minServerVersion>
+	<date>09/13/2013</date>
+	<minServerVersion>3.9.0</minServerVersion>
+	<adminconsole>
+		<tab id="tab-users">
+		<sidebar id="sidebar-users">
+			<item id="gitin-form" description="Settings for Git" url="gitin-form.jsp" name="Git Properties"/>
+		</sidebar>
+		</tab>
+	</adminconsole>
+</plugin>

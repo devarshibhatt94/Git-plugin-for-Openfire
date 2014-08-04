@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <servlet>
+	<servlet-name>gitin_002dform_jsp</servlet-name>
+	<servlet-class>org.apache.jsp.gitin_002dform_jsp</servlet-class>
+	
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>gitin_002dform_jsp</servlet-name>
+	<url-pattern>/Gitin-form.jsp</url-pattern>
+</servlet-mapping>
+	
+	<display-name>sitemesh-webapp-example</display-name>
+
+	<filter>
+		<filter-name>sitemesh</filter-name>
+		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>sitemesh</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>gitin-form.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<jsp-config>
+    <taglib>
+        <taglib-uri>/admin.tld</taglib-uri>
+        <taglib-location>/WEB-INF/admin.tld</taglib-location>
+    </taglib>
+    </jsp-config>
+</web-app>
