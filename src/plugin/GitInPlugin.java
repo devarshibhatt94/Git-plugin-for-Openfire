@@ -21,7 +21,7 @@ import org.xmpp.packet.Message;
 
 /**
  *
- * @author Shubham
+ * @author Devarshi
  */
 public class GitInPlugin {
     private static String COMMAND="";
